@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            font-size: 30px;
+            color: maroon;
+        }
+
+        .A {
+            margin: 0.2em;
+            padding: 0.2em;
+            font-size: 14px;
+            text-align: center;
+            font-family: sans-serif;
+            cursor: pointer;
+            float: center;
+            display: inline;
+
+        }
+
+        .a {
+            display: inline;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: 0.2em;
+            padding: 5px 3px;
+            width: 65px;
+            height: 25px;
+            font-size: smaller;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .a:hover{
+            background-color: black;
+            color: white;
+            border-radius: 0.3em;
+            margin: 0.26em;
+        }
+
+        .b {
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: 0px;
+            padding-top: 0.2em;
+            padding-bottom: 0.2em;
+            width: 49px;
+            height: 40px;
+            font-size: smaller;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .b:hover{
+            background-color: black;
+            color: bisque;
+            border-radius: 0.3em;
+        }
+
+        .c {
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: 0px;
+            padding: 1.5em;
+            width: 46px;
+            height: 45px;
+            font-size: smaller;
+            text-align: right;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .c:hover{
+            background-color: black;
+            color: bisque;
+            border-radius: 0.3em;
+        }
+
+        .d {
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 47px;
+            height: 45px;
+            font-size: smaller;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .d:hover{
+            background-color: black;
+            color: bisque;
+            border-radius: 0.3em;
+        }
+
+        .e {
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 53px;
+            height: 45px;
+            font-size: smaller;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .e:hover{
+            background-color: black;
+            color: bisque;
+            border-radius: 0.3em;
+        }
+
+        .f {
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 56px;
+            height: 45px;
+            font-size: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .f:hover{
+            background-color: black;
+            color: bisque;
+            border-radius: 0.3em;
+        }
+
+        .g {
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: auto;
+            padding-top: 20.2px;
+            padding-bottom: 20.2px;
+            width: 50.1px;
+            height: 40px;
+            font-size: smaller;
+            text-align: left;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .g:hover{
+            background-color: black;
+            color: bisque;
+            border-radius: 0.3em;
+        }
+
+        .h {
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 49px;
+            height: 40px;
+            font-size: smaller;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .h:hover{
+            background-color: black;
+            color: bisque;
+            border-radius: 0.3em;
+        }
+
+        .i {
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 60px;
+            height: 40px;
+            font-size: smaller;
+            text-align: left;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .i:hover{
+            background-color: black;
+            color: bisque;
+            border-radius: 0.3em;
+        }
+
+        .j {
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 0.3em;
+            margin: auto;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            width: 49px;
+            height: 40px;
+            font-size: smaller;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 0.2em 0 0.05em #222;
+            border-bottom-color: #555;
+            opacity: 0.5;
+        }
+        .j:hover{
+            background-color: black;
+            color: bisque;
+            border-radius: 0.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML+CSS KEYBOARD</h1>
+    <div class="A">
+        <div>
+            <div class="a">
+                <span>ESC</span>
+            </div>
+            <div class="a">
+                <span>F1</span>
+            </div>
+            <div class="a">
+                <span>F2</span>
+            </div>
+            <div class="a">
+                <span>F3</span>
+            </div>
+            <div class="a">
+                <span>F4</span>
+            </div>
+            <div class="a">
+                <span>F5</span>
+            </div>
+            <div class="a">
+                <span>F6</span>
+            </div>
+            <div class="a">
+                <span>F7</span>
+            </div>
+            <div class="a">
+                <span>F8</span>
+            </div>
+            <div class="a">
+                <span>F9</span>
+            </div>
+            <div class="a">
+                <span>F10</span>
+            </div>
+            <div class="a">
+                <span>F11</span>
+            </div>
+            <div class="a">
+                <span>F12</span>
+            </div>
+            <div class="a">
+                <span>INS</span>
+            </div>
+            <div class="a" id="ac">
+                <span>DEL</span>
+            </div>
+        </div>
+        <div>
+            <div class="b">
+                <span>~</span>
+                <span>`</span>
+            </div>
+            <div class="b">
+                <span>!</span>
+                <span>1</span>
+            </div>
+            <div class="b">
+                <span>@</span>
+                <span>2</span>
+            </div>
+            <div class="b">
+                <span>#</span>
+                <span>3</span>
+            </div>
+            <div class="b">
+                <span>$</span>
+                <span>4</span>
+            </div>
+            <div class="b">
+                <span>%</span>
+                <span>5</span>
+            </div>
+            <div class="b">
+                <span>^</span>
+                <span>6</span>
+            </div>
+            <div class="b">
+                <span>&</span>
+                <span>7</span>
+            </div>
+            <div class="b">
+                <span>*</span>
+                <span>8</span>
+            </div>
+            <div class="b">
+                <span>(</span>
+                <span>9</span>
+            </div>
+            <div class="b">
+                <span>)</span>
+                <span>0</span>
+            </div>
+            <div class="b">
+                <span>-</span>
+                <span>-</span>
+            </div>
+            <div class="b">
+                <span>+</span>
+                <span>=</span>
+            </div>
+            <div class="b" style="width: 100px;">
+                <span>BACK</span>
+                <span>SPACE</span>
+            </div>
+        </div>
+        <div>
+            <div class="c" style="width: 70px;">
+                <span>TAB</span>
+            </div>
+            <div class="c">
+                <span>Q</span>
+            </div>
+            <div class="c">
+                <span>W</span>
+            </div>
+            <div class="c">
+                <span>E</span>
+            </div>
+            <div class="c">
+                <span>R</span>
+            </div>
+            <div class="c">
+                <span>T</span>
+            </div>
+            <div class="c">
+                <span>Y</span>
+            </div>
+            <div class="c">
+                <span>U</span>
+            </div>
+            <div class="c">
+                <span>I</span>
+            </div>
+            <div class="c">
+                <span>O</span>
+            </div>
+            <div class="c">
+                <span>P</span>
+            </div>
+            <div class="d">
+                <span>{</span>
+                <span>[</span>
+            </div>
+            <div class="d">
+                <span>}</span>
+                <span>]</span>
+            </div>
+            <div class="c" style="width: 110px;">
+                <span>ENTER</span>
+            </div>
+        </div>
+        <div>
+            <div class="f" style="width: 95px;">
+                <span>CAPS</span>
+                <span>LOCK</span>
+            </div>
+            <div class="e">
+                <span>A</span>
+            </div>
+            <div class="e">
+                <span>S</span>
+            </div>
+            <div class="e">
+                <span>D</span>
+            </div>
+            <div class="e">
+                <span>F</span>
+            </div>
+            <div class="e">
+                <span>G</span>
+            </div>
+            <div class="e">
+                <span>H</span>
+            </div>
+            <div class="e">
+                <span>J</span>
+            </div>
+            <div class="e">
+                <span>K</span>
+            </div>
+            <div class="e">
+                <span>L</span>
+            </div>
+            <div class="f">
+                <span>:</span>
+                <span>;</span>
+            </div>
+            <div class="f">
+                <span>"</span>
+                <span>'</span>
+            </div>
+            <div class="f">
+                <span>|</span>
+                <span>\</span>
+            </div>
+        </div>
+        <div>
+            <div class="g" style="width: 65.1px;">
+                <Span>SHIFT</Span>
+            </div>
+            <div class="h">
+                <Span>|</Span>
+                <span>\</span>
+            </div>
+            <div class="g">
+                <Span>Z</Span>
+            </div>
+            <div class="g">
+                <Span>X</Span>
+            </div>
+            <div class="g">
+                <Span>C</Span>
+            </div>
+            <div class="g">
+                <Span>V</Span>
+            </div>
+            <div class="g">
+                <Span>B</Span>
+            </div>
+            <div class="g">
+                <Span>N</Span>
+            </div>
+            <div class="g">
+                <Span>M</Span>
+            </div>
+            <div class="h">
+                <span><</span>
+                        <span>,</span>
+            </div>
+            <div class="h">
+                <span>></span>
+                <spa>.</spa>
+            </div>
+            <div class="h">
+                <span>?</span>
+                <span>/</span>
+            </div>
+            <div class="g" style="width: 125px;">
+                <span>SHIFT</span>
+            </div>
+        </div>
+        <div>
+            <div class="i" style="width: 65px;">
+                <span>CTRL</span>
+            </div>
+            <div class="i">
+                <span>FN</span>
+            </div>
+            <div class="i">
+                <span>WIN</span>
+            </div>
+            <div class="i">
+                <span>ALT</span>
+            </div>
+            <div class="i" style="width: 230px;">
+                <span>SPACE</span>
+            </div>
+            <div class="i">
+                <span>ALT</span>
+            </div>
+            <div class="i">
+                <span>CTRL</span>
+            </div>
+            <div class="j" style="height: 20px;">
+                <span></span>
+            </div>
+            <div class="i">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="j" style="height: 20px;">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
